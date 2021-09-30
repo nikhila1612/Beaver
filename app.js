@@ -62,22 +62,6 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false)
-
-buildtask: functions()
-{
-  let taskListitem,taskCheckbox,taskValue,taskButton,taskTrash;
-  taskListitem=document.createElement("li");
-  taskListitem.setAttribute("class","task");
-  taskCheckbox=document.createElement("input");
-  taskCheckbox.setAttribute("type","checkbox");
-  taskvalue=document.createTextNode(this.taskInput.value);
-
-}
-
-
-
-
-
 function deleteTask(index){
   let getLocalStorageData = localStorage.getItem("New Todo");
   listArray = JSON.parse(getLocalStorageData);
